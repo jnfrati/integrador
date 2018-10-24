@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','C_Grupo@nuevoGrupo');
+
+Route::post('/addIntegrantes','C_Grupo@addIntegrantes');
+
+Route::post('/save','C_Grupo@save');
